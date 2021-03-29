@@ -7,11 +7,7 @@ class dB
     public function __construct()
     {
         if (!self::$connection) {
-<<<<<<< HEAD
-            self::$connection = new mysqli('localhost', 'root', '', 'be_project', '3306');
-=======
-            self::$connection = new mysqli('localhost', 'root', '', 'be_project', '3309');
->>>>>>> linh
+            self::$connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT);
             self::$connection->set_charset('utf8mb4');
         }
         return self::$connection;
