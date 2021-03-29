@@ -1,6 +1,7 @@
 <?php
 // LOGIN MODELS
 // HỒ SĨ HÙNG - LÊ TUẤN LIÊM
+include 'dB.php';
 class loginModel extends dB
 {
     //CHỨC NĂNG ĐĂNG KÝ THÀNH VIÊN
